@@ -1,10 +1,10 @@
-# 🔔 re-promise
+# 🧣 re-promise
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 
 [![Build Status](https://travis-ci.com/vivek12345/re-promise.svg)](https://travis-ci.com/vivek12345/re-promise)
 
-Easy to use function for retry failed promises/api calls with a back off time.
+Easy to use function for retrying failed promises/api calls with an exponential back off time.
 
 ### 🚚 Installation
 
@@ -81,7 +81,7 @@ function retryAndFetchUsers(id) {
 
 ## 📒 Api
 
-### 🔔 re-promise
+### 🧣 re-promise
 
 | Props                   | Type                   | Default   | Description                                                                                         |
 |-------------------------|------------------------|-----------|-----------------------------------------------------------------------------------------------------|
