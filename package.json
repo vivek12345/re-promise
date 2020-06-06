@@ -1,0 +1,100 @@
+{
+  "name": "re-promise",
+  "version": "0.0.1",
+  "description": "Retry failed promised with a backoff time",
+  "keywords": [
+    "retry-promise",
+    "promise-retry",
+    "api-promise",
+    "re-promise",
+    "re-promise"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.bundle.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:coverage": "cross-env NODE_ENV=test jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint src/",
+    "lint:fix": "eslint --fix src/",
+    "build": "microbundle build",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
+    "commit": "./node_modules/.bin/git-cz"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run eslint:fix",
+      "git add"
+    ],
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivek12345/re-promise.git"
+  },
+  "author": "Vivek Nayyar  <vivek.of.nayyar@gmail.com> (https://viveknayyar.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vivek12345/re-promise/issues"
+  },
+  "homepage": "https://github.com/vivek12345/re-promise#readme",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js}"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node",
+      "mjs"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.10.2",
+    "all-contributors-cli": "^5.4.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^5.4.0",
+    "fsevents": "^2.1.3",
+    "jest": "^23.5.0",
+    "jest-cli": "^23.5.0",
+    "microbundle": "^0.12.0",
+    "prettier": "^1.14.2",
+    "raf": "^3.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
