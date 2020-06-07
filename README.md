@@ -14,13 +14,13 @@
 ### 🛠 Installation
 
 ```
-yarn add re-promise
+yarn add @viveknayyar/re-promise
 ```
 
 or
 
 ```
-npm i re-promise --save
+npm i @viveknayyar/re-promise --save
 ```
 
 ### 🧠 Usage
