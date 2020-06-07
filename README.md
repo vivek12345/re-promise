@@ -41,7 +41,7 @@ const fetchUser = id => {
 
 ```javascript
 // with es6 await
-import { retryPromise } from 're-promise';
+import { retryPromise } from '@viveknayyar/re-promise';
 
 async function retryAndFetchUser(id) {
   try {
@@ -64,7 +64,7 @@ async function retryAndFetchUser(id) {
 
 ```javascript
 // with traditional promises
-import { retryPromise } from 're-promise';
+import { retryPromise } from '@viveknayyar/re-promise';
 
 function retryAndFetchUsers(id) {
   return retryPromise({
@@ -125,7 +125,7 @@ For example:
 
 ```javascript
 // with es6 await and backOffFactor
-import { retryPromise } from 're-promise';
+import { retryPromise } from '@viveknayyar/re-promise';
 
 async function retryAndFetchUser(id) {
   try {
