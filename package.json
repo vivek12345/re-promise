@@ -1,5 +1,5 @@
 {
-  "name": "re-promise",
+  "name": "@viveknayyar/re-promise",
   "version": "0.0.1",
   "description": "Retry failed api calls with a backoff time",
   "keywords": [
