@@ -98,7 +98,7 @@ function retryAndFetchUsers(id) {
 
 #### fn (required)
 
-This function will be called every time we want to retry a promis or an api call. Make sure you return a promise from this function.
+This function will be called every time we want to retry a promise or an api call. Make sure you return a promise from this function.
 It has the following signature:
 
 ```javascript
@@ -107,7 +107,7 @@ function fn() {
 }
 ```
 
-#### retryOn (not compulsory field)
+#### retryOn (not compulsory)
 
 This function will be called every time we have to decide if the promise should be retried or not. This function will be called with the error object so you can put in logic inside this function to return true or false based on which we will decide if the api call should be retried or not.
 
@@ -117,6 +117,39 @@ function retryOn(error) {
   return [502,500].includes(error.response.status);
 }
 ```
+
+#### backOffFactor (not compulsory)
+
+This param will decide the exponential delay between retry attempts.
+For example: 
+
+```javascript
+// with es6 await and backOffFactor
+import { retryPromise } from 're-promise';
+
+async function retryAndFetchUser(id) {
+  try {
+    // await on this promise to resolve if you are using es6 await
+    const resp = await retryPromise({
+      fn: () => fetchUser(id),
+      retries: 3,
+      retryDelay: 2000,
+      backOffFactor: 3,
+      retryOn: function(e) {
+        return [500, 502].includes(e.response.status);
+      }
+    });
+  } catch (e) {
+    console.log(e);
+    return Promise.reject(e);
+  }
+}
+
+```
+
+In the above case, our first retry call will happen after the `retryDelay` of 2000ms.
+The next retry call will now happen after `retryDelay*backOffFactor` which is 6000ms and similarly we will continue for the next call.
+
 
 ## 🧳 Size
 
