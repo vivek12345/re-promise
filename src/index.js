@@ -38,4 +38,5 @@ const retryPromise = ({ fn, retries = 3, retryDelay = 0, retryOn, backOffFactor 
     retryAttempt(retries, retryDelay);
   });
 };
+
 export { retryPromise };
