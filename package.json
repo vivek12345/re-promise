@@ -1,12 +1,11 @@
 {
   "name": "re-promise",
   "version": "0.0.1",
-  "description": "Retry failed promised with a backoff time",
+  "description": "Retry failed api calls with a backoff time",
   "keywords": [
     "retry-promise",
     "promise-retry",
     "api-promise",
-    "re-promise",
     "re-promise"
   ],
   "main": "dist/index.js",
