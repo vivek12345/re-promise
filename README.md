@@ -103,7 +103,7 @@ It has the following signature:
 
 ```javascript
 function fn() {
-  return axios.get('some url);
+  return axios.get('some url');
 }
 ```
 
