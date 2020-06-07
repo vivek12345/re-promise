@@ -6,7 +6,7 @@
 
 Easy to use function for retrying failed promises/api calls with an exponential back off time.
 
-### 🚚 Installation
+### 🛠 Installation
 
 ```
 yarn add re-promise
@@ -18,7 +18,7 @@ or
 npm i re-promise --save
 ```
 
-### ⚡️ Usage
+### 🧠 Usage
 
 ```javascript
 
@@ -79,9 +79,8 @@ function retryAndFetchUsers(id) {
 
 ```
 
-## 📒 Api
+## 🧩 Api
 
-### 🧣 re-promise
 
 | Props                   | Type                   | Default   | Description                                                                                         |
 |-------------------------|------------------------|-----------|-----------------------------------------------------------------------------------------------------|
@@ -114,11 +113,11 @@ function retryOn(error) {
 }
 ```
 
-## 📦 Size
+## 🧳 Size
 
 <img src='./size.png' />
 
-## 👍 Contribute
+## 🎈 Contribute
 
 Show your ❤️ and support by giving a ⭐. Any suggestions and pull request are welcome !
 
@@ -132,7 +131,7 @@ MIT © [viveknayyar](https://github.com/vivek12345)
 - [ ] Add Examples and Demo
 - [x] Test Suite
 
-## Contributors
+## 🎊 Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
