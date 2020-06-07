@@ -53,7 +53,7 @@
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js}"
+      "<rootDir>/src/**/?(*.)test.js"
     ],
     "testEnvironment": "jsdom",
     "testURL": "http://localhost",
