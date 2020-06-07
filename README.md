@@ -1,4 +1,7 @@
 <div align="center">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
     <h1>🧣re-promise</h1>
     Retry failed api calls with an exponential back off time
 </div>
@@ -140,9 +143,28 @@ MIT © [viveknayyar](https://github.com/vivek12345)
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/4931048?v=4" width="100px;"/><br /><sub><b>Vivek Nayyar</b></sub>](https://www.viveknayyar.in/)<br />[📖](https://github.com/vivek12345/re-promise/commits?author=vivek12345 "Documentation") [💻](https://github.com/vivek12345/re-promise/commits?author=vivek12345 "Code") [🎨](#design-vivek12345 "Design") [💡](#example-vivek12345 "Examples") |
-| :---: |
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.viveknayyar.in/"><img src="https://avatars3.githubusercontent.com/u/4931048?v=4" width="100px;" alt=""/><br /><sub><b>Vivek Nayyar</b></sub></a><br /><a href="#question-vivek12345" title="Answering Questions">💬</a> <a href="https://github.com/Vivek Nayyar/re-promise/issues?q=author%3Avivek12345" title="Bug reports">🐛</a> <a href="https://github.com/Vivek Nayyar/re-promise/commits?author=vivek12345" title="Code">💻</a> <a href="#design-vivek12345" title="Design">🎨</a> <a href="https://github.com/Vivek Nayyar/re-promise/commits?author=vivek12345" title="Documentation">📖</a> <a href="#ideas-vivek12345" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-vivek12345" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-vivek12345" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
